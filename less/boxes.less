@@ -13,20 +13,23 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 
     // Box color variations
+    .box-color-variant(@color) {
+        border-top-color: @color;
+    }
     &.box-primary {
-        border-top-color: @light-blue;
+        .box-color-variant(@light-blue);
     }
     &.box-info {
-        border-top-color: @aqua;
+        .box-color-variant(@aqua);
     }
     &.box-danger {
-        border-top-color: @red;
+        .box-color-variant(@red);
     }
     &.box-warning {
-        border-top-color: @yellow;
+        .box-color-variant(@yellow);
     }
     &.box-success {
-        border-top-color: @green;
+        .box-color-variant(@green);
     }
 
     // fixed height to 300px
